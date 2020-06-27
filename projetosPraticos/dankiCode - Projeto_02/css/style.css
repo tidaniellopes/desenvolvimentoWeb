@@ -1,0 +1,269 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Open Sans', sans-serif;
+}
+
+html,body{
+	height: 100%;
+}
+/*DIVS GERAIS */
+
+.clear{
+	clear: both;
+}
+
+
+/**HEADER 	**/
+
+header{
+
+	background-color: rgb(180,180,180);
+	padding: 10px 2% 40px 2%; /*distanciamento */
+}
+
+.container{
+
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.logo_1{
+	float: left;  /*se posicionando na esquerda*/
+	width: 150px; /*limite da largura em px*/
+	height: 50px; /*limite da altura em px */
+	background-image: url('../imagens/logo1.png');
+	background-size: 100% auto; /*Background 100% dentro do limite em px*/
+	background-position: center;/*Alinha verticalmente*/
+	background-repeat: no-repeat; /*Background não se repete*/
+	/*background-color: green;*/
+}
+
+.logo_2{
+	float: right; /*se posicionando na direita*/
+	width: 160px; /*limite da largura em px*/
+	height: 50px; /*limite da altura em px */
+	background-image: url('../imagens/logo2.png');
+	background-size: 100% auto; /*Background 100% dentro do limite em px*/
+	background-position: center;/*Alinha verticalmente*/
+	background-repeat: no-repeat; /*Background não se repete */
+	/*background-color: green;*/
+}
+
+/*SECTION BG*/
+
+section.cover-form{
+	width: 100%;/*Vai ocupar todo o espaço */
+}
+
+.bg{/*IMAGEM BACKGROUND */
+	/*SUBSTITUINDO O FLOAT (Vê o filho(form-container)*/
+	position: relative;/*div pai */
+	/******************************/
+	height: 560px;/*Tamanho verdical */
+	background-position: center; /*Se localizar no centro */
+	background-image: url('../imagens/bg-form.jpg');/*Imagem*/
+	background-size: cover; /*Cubri toda a área */
+}
+
+/*FORMULÁRIO*/
+.form-container{ 
+	/*SUBSTITUINDO O FLOAT (Vê o pai(gb)*/
+	position: absolute;/*div filho */
+	right: 30px; /*movimentando container */
+	top: -2.5%;/*Relativo a metade do > 100 
+	 no caso, 105% - 100% = 5/2 = 2.5 */
+	/******************************/
+	width: 400px;/*Altura*/
+	height: 105%;/*Altura dentro da div-pai(container-bg)*/
+	background-color: white;/*cor background */
+	box-shadow: 1px 1px 2px 1px rgb(180,180,180);
+}
+
+.form-container h2{ /*H2 dentro do form */
+	font-weight: normal;/*Sem detalhes*/
+	background-color: rgb(210,210,210);/*Cor do quadrado ao redor do h2 */
+	padding: 25px 15px; /*Distânciamento interno em px */
+	color: black; /*Cor da fonte */
+	font-size: 18px;/*Tamanho da fonte do h2 */
+}
+
+.form-container form{ /*Manipulando a tag form */
+	margin-top: 20px;/*Separando ele do container e do h2 */
+	padding: 20px; /*espaçamento interno */
+}
+
+.form-container form p {
+	font-size: 14px;/*Tamanho da fonte P*/
+	color: #525252; /*Cor */
+}
+
+.form-wraper:not(:first-child){/*todas as classes menos a primeira */
+
+	margin-top: 40px;/*Aplique um padding 40px */
+}
+
+.form-wraper:last-child{
+	margin-top: 20px; /*Apenas no último node */
+}
+
+.form-container form input[type=text]{ /*Manipulando a entrada text dentro do form */
+	width: 100%; /*Largura 100%*/
+	border: 1px solid #ccc;/*borda*/
+	height: 45px;/*Altura*/
+	line-height: 45px;/*????????????????????????????????????????*/
+	padding-left: 10px; /*espaçamento da esquerda */
+}
+
+.form-container input[type=submit]{ /*Manipulando entrada submit */
+	background-color: #033c50; /*Cor do backgtound */
+	text-transform: uppercase; /*TUDO MAIUSCULO */
+	color: white;/*Cor das letras*/ 
+	width: 100%; /*Tamanho largura */
+	height: 50px; /*Altura do input*/
+	font-size: 25px; /*tamanho da fonte */
+	cursor: pointer; /*Curso do mouse */
+	border: 0; /*tirar a borda padrao do submit */
+}
+/***************/
+/*SECTION CHAMADA */
+
+section.chamada{
+	width: 100%; /*ESPAÇAMENTO TOTAL */
+	text-align: center; /*CENTRALIZA TUDO */
+	z-index: 1;/*PRIMEIRO PLANO */
+}
+
+section.chamada div.container{
+
+	background-color: #29526d;
+	padding:70px 0 50px 0;
+}
+
+section.chamada h2{
+	width: 96%; /*largura máxima dentro do tamanho */
+	max-width: 700px;/*Tamanho máximo */
+	display: inline-block; 
+	color: white; /*CORES */
+	font-size: 24px; /*TAMANHO DA FONTE */
+	font-weight: normal; /*SEM DETALHES */
+
+}
+
+section.chamada p{
+	width: 98%; /*largura máxima dentro do tamanho */
+	max-width: 700px;/*Tamanho máximo */
+	display: inline-block; 
+	color: white; /*CORES */
+	margin-top: 10px;	
+	font-size: 18px; /*TAMANHO DA FONTE */
+	font-weight: normal; /*SEM DETALHES */
+
+}
+/***************/
+/**MOISAICO***/
+.flex-mosaico{
+	display: flex; /*Definindo um container flex
+	Um contêiner com "flex-wrap: nowrap;
+	" nunca embrulhará seus itens.*/
+}
+
+.item-1-mosaico{
+	background-position: center;/*Se posicionará no centro do seu limite*/
+	background-size: cover; /*Força a cobrir tudo */
+	width: 60%; /*Largura dentro do pai(flex-mosaico)*/
+}
+
+.item-2-mosaico{
+	width: 40%;/*Largura dentro do pai(flex-mosaico)*/
+	padding: 50px 40px; /*Espaçamento interno */
+	background-color: #4683AB;
+	color: white; /*Cor de texto */
+	font-size: 20px; /*Tamanho da fonte */
+	text-align: justify; /*Texto justificável */
+}
+
+/*FOOTER */
+footer{
+	text-align: center; /*Alinhando o texto */
+	max-width: 1200px; /*Largura máxima */
+	width: 100%; /*100% da largura máxima*/
+	margin: 0 auto; /*Alinhar no centro */
+	background-color: rgb(210, 210, 210); /*Cor do footer*/
+	height: 80px; /*Altura*/
+
+}
+footer p{
+	margin: 8px;
+	width: 50%;
+	float: left; 
+
+}
+
+footer img{
+	max-width: 150px;
+	width: 50%;
+	float: right;
+	position: relative;
+	top: 20px;
+	margin-right: 10%;
+}
+/***************/
+/***************/
+/*RESPONSIVO*/
+@media screen and (max-width: 510px){ /*quando a tela chegar em (x)*/
+
+	/*HEADER RESPONSIVO */
+	header{
+		text-align: center; /*o header vai se alinhar */
+	}
+	.logo_1,.logo_2{
+		margin-top:10px; /*margem em cima */
+		float: none;/*Sem lado específico */
+		display: inline-block; /*"CADA UM NO SEU CANTO"*/
+		/*Quebra de linha no html*/
+	}/*****/
+}
+/*RESPONSIVO */
+@media screen and (max-width: 960px){
+	/*Background-formulário e section1  responsivo */
+	.bg{
+		height: auto;
+		padding: 40px 0;
+		text-align: center;/*Deixando o bg no centro*/
+	}
+
+	.form-container{
+		text-align: left;
+		height: auto;
+		width: 96%; /*porcentagem do limite*/
+		max-width: 400px;/*Limitando a largura*/
+		position: static;/*saindo do absolute para o static */
+		display: inline-block; /*centralizando com o filho */
+	}
+	/*********************************************************/
+}
+
+/*RESPONSIVO*/
+@media screen and (max-width: 768px){
+	/*MOSAICO */
+
+	.flex-mosaico{
+		display: block;/*QUEBRAR O DISPLAY:FLEX, CONSEQUENTEMENTE QUEBRA A ORDEM */
+	}
+	.item-1-mosaico{
+		
+		padding-top: 60%;/*Definindo uma altura (responsiva) para o display:block*/;
+		width: 100%;/*DEPOIS QUE QUEBRAR, COLOCAR 100% PARA IREM CADA UM PARA BAIXO */
+	}
+	.item-2-mosaico{
+		
+		width: 100%;/*DEPOIS QUE QUEBRAR, COLOCAR 100% PARA IRhttps://cursos.dankicode.com/campus/curso-front-end-completo/projeto-2-analise-e-revisaoEM CADA UM PARA BAIXO */
+	}
+	/*************/
+
+}
+
+

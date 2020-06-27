@@ -1,0 +1,646 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Montserrat', sans-serif;
+}
+
+html,body{
+
+	height: 100%;
+}
+.container{
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1400px;
+}
+
+.clear{
+	clear: both;
+}
+/*Header do site*/
+
+header{
+	padding: 20px 2%;
+}
+header .logo img{
+	float: left; 
+	width: 236px; 
+}
+
+/*MENU MOBILE *, REVISAR!!!!!*/
+
+nav.menu-mobile{ /*REVISÃO */
+	display: none; /*Escondemos o mobile */
+	float: right;
+	cursor: pointer;
+	width: 28px; /*Tamanho */ 
+	height: 28px;/*Tamanho */
+	background-image: url('../imagens/menu-mobile.png'); /*Importo a imagem mobile*/
+	background-size: 100% 100%; /*Porcentagem dele*/
+	margin-top: 8px;
+}
+
+nav.menu-mobile ul{ /*REVISÃO */
+
+	background-color: white;
+	position: absolute; /*Posição absoluta */
+	top: 60px; /*Joga para baixo para aparecer 
+	a logo e o botão */
+	left: 0;/*IMPORTANTE*/
+	text-align: center; /*Alinhar os textos ao centro*/
+	width: 100%; /*Cobre toda a tela*/
+	z-index: 99; /*Menu em cima de tudo,prioridade */
+
+}
+
+.menu-mobile ul li{/*REVISÃO */
+	padding: 10px 0;
+	text-transform: uppercase;
+}
+
+/***/
+/*Menu-desktop*/
+
+header nav.menu-desktop{
+	float: right; /
+}
+
+header nav.menu-desktop ul{
+	padding: 10px 0;
+	list-style-type: none; 
+}
+
+header nav.menu-desktop ul li{
+	float: left; /*Quebra a linha vertical */
+	font-size: 13px;
+	padding: 0 20px; /*Espaçamento entre links */
+	text-transform: uppercase; /*Tudo maiúsculo */
+}
+
+header ul li a{
+	text-decoration:none;/*Retirar a linha embaixo do link*/
+	color: #b4b4b4;
+	font-size: 14px;
+}
+
+/***/
+/*Mosaico*/
+
+.mosaico-single{
+	float: left;
+	width: calc(100% / 6); /*Divide o tamanho por 6
+	Para todos os sigles se ajustarem dentro do container
+	*/
+}
+
+.img-mosaico-single{
+	width: 100%;
+	padding-top: 100%;
+	background-color: #ccc;
+	border: 5px solid white;
+	/*Substituir por imagens depois */
+}
+
+/**/
+
+/*Servicos*/
+
+section.servicos > .container{ /*Pegar apenas o container*/
+	max-width: 800px; /*Limitando o Container para esse valor*/
+	display: flex; /*deita os itens*/
+	align-items: center; /*Alinha os itens na horz*/
+	position: relative; /*Manupular o top*/
+	top: -30px; /*Jogar para cima para sobrepor o mosaico*/
+	text-align: center;
+}
+
+.box-servico{
+	background-image: url('../imagens/icone_dente.png'); /*Dentinho*/
+	background-size: 18px 18px; /*Tamanho do dentinho*/
+	background-position: center calc(100% - 5px); /*Para subir o dentinho */
+	background-repeat: no-repeat;
+
+}
+
+.box-servico h2{
+	color: white;
+	font-weight: normal;
+	font-size: 15px;
+	text-transform: uppercase;
+}	
+
+.box-servico p{
+	color: white;
+	font-weight: normal;
+	margin-top: 8px;
+	font-size: 12px;
+
+}	
+
+.box-servico:nth-of-type(1){/*Manipular a primeira tag .box-servico*/
+	width: 30%;
+	padding: 30px 2%;
+	background-color:#576975;
+	
+}
+
+.box-servico:nth-of-type(2){ /*Manipular a segunda tag .box-servico*/
+	width: 40%;
+	padding: 45px 2%;
+	background-color:  #688293;
+	background-image: none; /*Sem dentinho no meio */
+}
+
+.box-servico:nth-of-type(3){/*Manipular a terceira tag .box-servico*/
+	width: 30%;
+	padding: 30px 2%;
+	background-color:  #576975;
+}
+
+
+/*Perfil*/
+/*ESTUDAR PERFIL, POSICIONAMENTO E DIVS*/
+.perfil-container {/*REVISAR */
+	padding: 10px 0 40px 0;
+}
+
+.perfil-container .container{/*REVISAR */
+
+	max-width: 800px;
+}
+
+.perfil-wraper{/*REVISAR */
+
+	padding-top:60%;
+	position: relative;
+}
+
+.perfil-wraper2{/*REVISAR */
+	position: absolute;
+	top:0;
+	left:0;
+	display: flex;
+	width: 100%;
+	height: 100%;
+
+}
+
+.img-perfil{/*REVISAR */
+
+	width: 40%;
+	height: 100%;
+	background-image: url('../imagens/img_perfil.png');
+	background-size: 100% 100%;
+}
+
+.text-perfil{/*REVISAR */
+	padding: 0 30px;
+	width: 60%;
+
+}
+
+.text-perfil h2{
+	font-size:18px;
+	color:#698293;
+}
+
+.text-perfil p{
+	color: #4b4b4b;
+	font-size: 14px;
+	margin-top: 12px;
+	text-align: justify;
+}
+
+/**/
+/*SECTION-VIDEOS*/
+
+.videos{
+	padding: 40px 0; /*Separando sections*/
+}
+
+.box-video{
+	border: 10px solid white;
+	float: left;
+	width: 33.3%; /*Largura de cada tela*/
+	padding-top:calc(0.6 * 33.3%); /*Divide o tamanho do video
+	pelo width de cada um */
+	/******************/
+	position: relative; /*Para ajudar o iframe*/
+}
+
+iframe{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+}
+/**/
+/*TRATAMENTO*/
+
+.tratamentos > h2{
+	font-size: 25px;
+	text-align: center;
+	color:#698263;
+
+}
+
+.tratamentos .container{
+	padding: 50px 0;
+}
+
+.tratamento-container{
+	float: left;/*Posicionamento à esquerda*/
+	width: 33.3%; /*Divide em 3 as colunas*/
+}
+
+.tratamento-single{
+	padding: 20px;
+
+}
+
+.tratamento-single h2{
+	font-size: 18px;
+	color:#737373;
+	text-align: center;
+}
+
+.tratamento-single p{
+	margin: 10px 0;
+	font-size:13px;
+	color:#b4b4b4;
+	text-align: justify;
+}
+/**
+/*Depoimentos*/
+.depoimentos > h2{
+	font-size: 18px;
+	color:#737373;
+	text-align: center;	
+	
+}
+
+.depoimentos > .container{
+	padding: 40px 0;
+	max-width: 400px;
+}
+
+.depoimentos .depoimento-single{
+	text-align: center;
+	width: 100%;
+	padding: 0 2%;
+}
+
+.depoimento-single quote{
+	font-size: 15px;
+	color: #b4b4b4;
+}
+
+.depoimento-single .nome-depoimento{
+	padding: 19px 0;
+}
+
+.nome-depoimento img{
+	/*Para deixar e img redonda, basta colocar
+	o width e o height iguais e o border radios
+	dividido por dos dois.*/
+	width: 32px;
+	height: 32px;
+	border-radius: 16px; /*Metade */
+}
+
+.nome-depoimento span{
+	position: relative;
+	top: 6px;
+	color:#b4b4b4;
+	font-size: 13px;
+	display: inline-block;
+	vertical-align: top;
+}
+
+/**/
+/*Instagram*/
+.instagram-chamada{
+	float: left;
+	width: 100%;
+	text-align: center;
+	padding: 40px 0;
+	background-color: #98a5ae;
+
+}
+
+.instagram-chamada p{
+	line-height: 20px; /*Não sei para que serve*/
+	margin: 10px 0;
+	color: white;
+	font-size: 13px;
+
+}
+/**/
+
+/*SOCIAL SINGLE*/
+
+.mosaico-social{
+	float: left;
+	width: 100%;
+}
+
+.img-mosaico-single-social{
+	float: left;
+	/*Como as imagens são quadradas, a altura e a largura
+	são iguais.*/
+	width: calc(100% / 9); /*100% dividido por 9*/
+	padding-top:calc(100% / 9); /*100% dividido por 9*/
+	/**/
+	background-color: #ccc;
+	border:6px solid white;
+}
+
+/*Facebook*/
+.facebook-chamada{
+	float: left;
+	width: 100%;
+	text-align: center;
+	padding: 40px 0;
+	background-color: #576975;
+
+
+}
+
+.facebook-chamada p{
+	line-height: 20px; /*Não sei para que serve*/
+	margin: 10px 0;
+	color: white;
+	font-size: 13px;
+
+}
+
+/**/
+/*Contato*/
+.contato{
+	padding: 50px 2%;
+
+}
+
+.contato > h2{
+	color: #698293;
+	text-align: center;
+	font-size: 18px; 
+}
+
+.contato form{
+	width: 100%;
+	max-width: 500px;
+	margin: 20px auto;
+}
+
+.form-wraper{
+	float: left;
+	margin-top: 10px;
+	padding: 0 10px;
+}
+
+.w100{
+	width: 100%;
+
+}
+
+.w50{
+	width: 50%;
+
+}
+
+.form-wraper span{
+	font-size: 15px;
+	color:#b4b4b4;
+}
+
+.form-wraper input[type=text]{
+	width: 100%;
+	height: 35px;
+	line-height: 35px; /*Mesmo valor da altura*/
+	padding-left: 9px; /*Desbugar o Mozila*/
+	border: 1px solid #dadada;
+	margin-top: 8px;
+}
+
+.form-wraper textarea{
+	width: 100%;
+	padding: 8px;
+	height: 121px;
+	resize: none; /*Retirar manipulação textarea*/
+	border: 1px solid #dadada;
+	margin-top: 8px;
+
+
+}
+
+.form-wraper input[type=submit]{
+	width: 100px;
+	height: 34px;
+	border: 0; /*Redefinindo borda padrão*/
+	background: #688293;
+	color:white;
+	cursor: pointer;
+	/*Para centralizar */
+	display: inline-block;
+	/*Colocar text-aling:center na div individual no (PAI) html
+	<div class="form-wraper w100" style="text-align: center;">
+	*/
+	/**/
+
+
+}
+/**/
+/*FOOTER*/
+
+footer{
+	padding: 40px 2%;
+	background-color: #688293;
+
+}
+
+footer .container{
+	max-width: 1100px;
+
+}
+
+footer .footer-block{
+	float: left;
+	width: 33.3%;
+}
+
+.footer-block h2{
+	color:white;
+	font-weight: normal;
+	font-size: 18px;
+}
+
+
+footer p{
+	color:white;
+	font-size: 14px;
+	margin-top: 8px;
+}
+
+/**/
+
+@media screen and (max-width: 1024px){
+	.img-mosaico-single-social{
+	/*Como as imagens são quadradas, a altura e a largura
+	são iguais.*/
+	width: calc(100% / 6); /*100% dividido por 9*/
+	padding-top:calc(100% / 6); /*100% dividido por 9*/
+	/**/
+	}
+
+	.mosaico-social > div:nth-of-type(1n + 7){ /*Ocultar 
+		7 em diante */
+		display: none;
+	}
+
+}
+
+/*ESTUDAR PERFIL, POSICIONAMENTO E DIVS*/
+@media screen and (max-width: 768px){
+
+	footer{
+		text-align: center;
+
+	}
+
+	footer .container{
+
+	}
+
+	footer .footer-block{
+		float: none;
+		width: 100%;
+		margin: 30px;
+	}
+
+	 nav.menu-desktop{
+		display: none; /*Menu desktop some*/
+
+	}
+
+	 nav.menu-mobile{
+		display: block; /*Menu mobile aparece*/
+	}
+
+	section.servicos > .container{ 
+		
+		flex-direction: column; /*Alinhamento vertical */ 
+	}
+
+	.box-servico:nth-of-type(1){/*Manipular a primeira tag .box-servico*/
+		width: 90%;
+		max-width: 560px;
+	
+	}
+
+	.box-servico:nth-of-type(2){ /*Manipular a segunda tag .box-servico*/
+		width: 95%;
+		max-width: 600px;
+	}	
+
+	.box-servico:nth-of-type(3){/*Manipular a terceira tag .box-servico*/
+		width: 90%;
+		max-width: 560px;
+
+	}
+
+	.perfil-wraper{
+		padding-top: 0; /*Tira posicionamento quando apli-
+		camos o position static no filho */
+	}
+
+	.perfil-wraper2{ /*REVISAR */
+		text-align: center;
+		display: inline-block;
+		/*tirando o display:flex; e a position absolute
+		a próxima sessãobuga */
+		/*Para arrumar colocamos */
+		height: auto;
+		position: static;
+		/*Vai gerar um erro de posicionamento, basta co-
+		locar um padding-top:0; no pai (perfil-wraper)
+		. Acima*/
+
+	}
+
+	.img-perfil{ /*REVISAR */
+		width: 60%;
+		display: inline-block;
+		padding-top: 50%;
+		height: auto; 
+
+	}
+
+	.text-perfil{ /*REVISAR */
+		display: inline-block;
+		width: 100%;
+		padding: 0 30px;
+	}
+
+	.videos{
+	
+		text-align: center;
+	}
+
+	.box-video{
+		float: none;
+		display: inline-block;
+		border: 10px solid white;
+		width: 70%; /*Largura de cada tela*/
+		padding-top:calc(0.6 * 70%); /*Divide o tamanho do video
+		pelo width de cada um */
+		/******************/
+	}
+
+	iframe{
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+	}
+
+	.img-mosaico-single-social{
+	/*Como as imagens são quadradas, a altura e a largura
+	são iguais.*/
+	width: calc(100% / 3); /*100% dividido por 9*/
+	padding-top:calc(100% / 3); /*100% dividido por 9*/
+	/**/
+	}
+
+	.mosaico-social > div:nth-of-type(1n + 4){ /* 
+		4 em diante */
+		display: none;
+	}
+
+}
+
+@media screen and (max-width: 580px){
+	.img-perfil{
+		width: 80%;
+		padding-top: 70%;
+
+	}
+
+	.box-video{
+		width: 100%;
+		padding-top: calc(100% * 0.6);
+	}
+
+	.w50{
+		width: 100%;
+	}
+
+
+@media screen and (max-width: 480px){
+	header .logo img{
+		width: 200px;
+	}
+}
