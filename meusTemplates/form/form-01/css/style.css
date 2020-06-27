@@ -18,7 +18,7 @@ html,body{
 }
 
 .contato > h2{
-	color: #698293;
+	color: #80aac7;
 	text-align: center;
 	font-size: 18px; 
 }
@@ -74,7 +74,7 @@ html,body{
 	width: 100px;
 	height: 34px;
 	border: 0; /*Redefinindo borda padrão*/
-	background: #688293;
+	background: #80aac7;
 	color:white;
 	cursor: pointer;
 	/*Para centralizar */
@@ -83,7 +83,9 @@ html,body{
 	<div class="form-wraper w100" style="text-align: center;">
 	*/
 	/**/
+}
 
-
+.form-wraper input[type=submit]:hover{
+    background-color: #6a9ec4;
 }
 /**/
