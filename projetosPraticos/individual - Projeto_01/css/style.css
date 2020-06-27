@@ -119,18 +119,52 @@ header nav ul li a{
 .section-02{
     width: 100%;
     height: auto;
-    padding: 20px;
+    padding: 40px;
     background-color: rgb(230, 230, 230);
 }
 
 .section-02 h1{
     text-align: center;
     font-size: 35px; 
-    padding:  10px 0;  
+    padding:  0 0 10px 0;  
 }
 
 .section-02 p{
     text-align: justify;
+}
+
+.section-03{
+    background-color:  rgb(230, 230, 230);
+    width: 100%;
+    height: auto;
+    padding: 40px 0;
+    margin: 0 auto;
+}
+
+.section-03 .container{
+    text-align: center; /*Alinha os 3 no centro, inclusive as imagens */
+}
+
+.info-wraper{
+    float: left;
+    width: 33.3%;
+    margin: 0 auto;
+    
+}
+
+.section-03 img{
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+}
+
+.section-03 h3{
+text-align: center;
+
+}
+
+.section-03 p{
+text-align: justify;
 }
 
 
