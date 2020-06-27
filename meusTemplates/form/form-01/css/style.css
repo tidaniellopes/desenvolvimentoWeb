@@ -1,5 +1,89 @@
 *{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    outline: 0;
 }
+
+html,body{
+
+	height: 100%;
+}
+
+/*Contato*/ 
+.contato{
+	padding: 50px 2%;
+
+}
+
+.contato > h2{
+	color: #698293;
+	text-align: center;
+	font-size: 18px; 
+}
+
+.contato form{
+	width: 100%;
+	max-width: 500px;
+	margin: 20px auto;
+}
+
+.form-wraper{
+	float: left;
+	margin-top: 10px;
+	padding: 0 10px;
+}
+
+.w100{
+	width: 100%;
+
+}
+
+.w50{
+	width: 50%;
+
+}
+
+.form-wraper span{
+	font-size: 15px;
+	color:#b4b4b4;
+}
+
+.form-wraper input[type=text]{
+	width: 100%;
+	height: 35px;
+	line-height: 35px; /*Mesmo valor da altura*/
+	padding-left: 9px; /*Desbugar o Mozila*/
+	border: 1px solid #dadada;
+	margin-top: 8px;
+}
+
+.form-wraper textarea{
+	width: 100%;
+	padding: 8px;
+	height: 121px;
+	resize: none; /*Retirar manipulação textarea*/
+	border: 1px solid #dadada;
+	margin-top: 8px;
+
+
+}
+
+.form-wraper input[type=submit]{
+	width: 100px;
+	height: 34px;
+	border: 0; /*Redefinindo borda padrão*/
+	background: #688293;
+	color:white;
+	cursor: pointer;
+	/*Para centralizar */
+	display: inline-block;
+	/*Colocar text-aling:center na div individual no (PAI) html
+	<div class="form-wraper w100" style="text-align: center;">
+	*/
+	/**/
+
+
+}
+/**/
