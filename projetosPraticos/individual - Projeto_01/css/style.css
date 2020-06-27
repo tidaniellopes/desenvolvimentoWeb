@@ -119,14 +119,19 @@ header nav ul li a{
 .section-02{
     width: 100%;
     height: auto;
-    padding: 40px;
+    padding: 30px 0 50px 0;
     background-color: rgb(230, 230, 230);
+}
+
+.section-02 .container{
+    max-width: 1000px;
+    padding: 0 5%;
 }
 
 .section-02 h1{
     text-align: center;
     font-size: 35px; 
-    padding:  0 0 10px 0;  
+    padding:  30px 0;  
 }
 
 .section-02 p{
@@ -137,7 +142,7 @@ header nav ul li a{
     background-color:  rgb(230, 230, 230);
     width: 100%;
     height: auto;
-    padding: 40px 0;
+    
     margin: 0 auto;
 }
 
@@ -149,8 +154,10 @@ header nav ul li a{
     float: left;
     width: 33.3%;
     margin: 0 auto;
-    
+    border: 10px solid rgba(255, 255, 255, 0.0);
+    padding: 2%; 
 }
+
 
 .section-03 img{
     width: 150px;
@@ -159,12 +166,26 @@ header nav ul li a{
 }
 
 .section-03 h3{
-text-align: center;
-
+    text-align: center;
+    padding: 10px 0;
+    font-size: 25px;
 }
 
-.section-03 p{
-text-align: justify;
+.section-03 .info-wraper p{
+    text-align: justify;
+}
+
+.section-04{
+    padding-top: 20px;
+	width: 100%;
+	height: 100px;
+	border-top: 2px solid rgb(136, 136, 136);7
+}
+
+.section-04 p{
+	padding-top: 20px;
+	text-align: center;
+	color: rgb(136, 136, 136);
 }
 
 
@@ -195,4 +216,24 @@ text-align: justify;
         position: relative;
         top: -10px;
     }
+
+    .section-03 .info-wraper{
+        width: 50%;
+        float: left;
+    }
+
+    .section-03 .info-wraper:nth-child(3){
+        float: none;
+       
+    }
+
+}
+
+@media screen and (max-width: 568px){
+    .section-03 .info-wraper{
+        width: 100%;
+        float: none;
+    }
+
+    
 }
