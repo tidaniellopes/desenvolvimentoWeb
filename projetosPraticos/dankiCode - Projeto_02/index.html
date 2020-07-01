@@ -1,105 +1,130 @@
 <!DOCTYPE html>
-<html>
-<head lang="pt-br">
-	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<title>Projeto_02</title>
-	<meta name="description" content="Conteúdo do meu site">
-	<meta name="keywords" content="Palavras,separadas,por,virgula">
-	<meta name="author" content="Daniel">
-	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0">
-	<meta charset="utf-8">
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta charset="descriptions" content="Conteudo do site">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="css/style.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
 
-	<header>
-		<div class="container">
-			<div><div class="logo_1"></div><!--logo1--></div><!--quebra de linha -->
-			<div><div class="logo_2"></div><!--logo2--></div><!--quebra de linha -->
-			<div class="clear"></div><!--limpar o float-->
-		</div><!--container-->
-	</header>
+    <header>
+        <div class="container">
+            <div class="logo-01">
 
-	<section class="cover-form">
-		<div class="container bg">
-			<div class="form-container">
-				<h2>PODE ACREDITAR,POR DENTRO É AINDA MAIS BONITO</h2>
-				<form>
-					<div class="form-wraper">
-						<p>Nome Completo:</p>
-						<input type="text" name="nome" required placeholder="Nome">
-					</div><!--form-wraper-->
+            </div><!--logo-01-->
+            <div class="logo-02">
 
-					<div class="form-wraper">
-						<p>E-mail:</p>
-						<input type="text" name="email" required placeholder="Nome">
-					</div><!--form-wraper-->
+            </div><!--logo-02-->
+        </div><!--container-->  
+        <div class="clear"></div><!--clear-->
+    </header>
 
-					<div class="form-wraper">
-						<p>Telefone:</p>
-						<input type="text" name="telefone" required placeholder="Nome">
-					</div><!--form-wraper-->
+    <section class="section-01">
+        <div class="banner">
+            <div class="container">
+                <form>
+                    <h2>PODE ACREDITAR,POR DENTRO É AINDA MAIS BONITO</h2>
+                    <div class="form-wraper">
+                        <p>Nome:</p>
+                        <input type="text" name="nome" placeholder="Nome*">
+                    </div><!--form-wraper-->
 
-					<div class="form-wraper">
-						<input type="submit" name="acao" value="enviar">
-					</div><!--form-wraper-->
-					<div class="form-wraper">
-						<p>Campos Obrigatórios*</p>
-					</div>
+                    <div class="form-wraper">
+                        <p>Telefone:</p>
+                        <input type="text" name="nome" placeholder="Telefone*">
+                    </div><!--form-wraper-->
 
-				</form>
-			</div><!--form-container-->
-		</div><!--cointainer bg -->
-	</section>
+                    <div class="form-wraper">
+                        <p>E-mail:</p>
+                        <input type="text" name="nome" placeholder="E-mail*">
+                    </div><!--form-wraper-->
 
-	<section class="chamada">
-		<div class="container">
-			<div><h2>There are many variations of passages of Lorem Ipsum available,There are many variations </h2></div>
-			<div><p>There are many variations</p></div>
-		</div><!--container-->
-	</section><!--cover form -->
+                    <div class="form-wraper">
+                        <input type="submit" value="Enviar">
+                        <p>Campos Obrigatórios*</p>
+                    </div><!--form-wraper-->
+                </form>
+            </div><!--container-->
+        </div><!--banner-->
+        <div class="clear"> </div><!--clear-->
+    </section><!--section-01-->
 
-	<section class="mosaico">
-		<div class="container">
-			<div class="flex-mosaico">
-				<div style="background-image: url('imagens/mosaico1.jpg');" class="item-1-mosaico"><!--importando a imagem junto comm o html -->
-				</div><!--item-1-mosaico-->
-				<div class="item-2-mosaico">
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eros arcu, sollicitudin id mauris non, pharetra faucibus felis. Etiam scelerisque nulla sit amet felis iaculis malesuada.</p>
-				</div><!--item-2-mosaico-->
-			</div><!--flex-moisaico-->
-<!--------------------------------------------------->
-			<div class="flex-mosaico">
-				<div style="background-image: url('imagens/mosaico2.jpg'); order: 2" class="item-1-mosaico"><!--importando a imagem junto comm o html -->
-				</div><!--item-1-mosaico-->
-				<div class="item-2-mosaico" style="order: 1">
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eros arcu, sollicitudin id mauris non, pharetra faucibus felis. Etiam scelerisque nulla sit amet felis iaculis malesuada.</p>
-				</div><!--item-2-mosaico-->
-			</div><!--flex-moisaico-->
-<!--------------------------------------------------->
-			<div class="flex-mosaico">
-				<div style="background-image: url('imagens/mosaico3.jpg');" class="item-1-mosaico"><!--importando a imagem junto comm o html -->
-				</div><!--item-1-mosaico-->
-				<div class="item-2-mosaico">
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eros arcu, sollicitudin id mauris non, pharetra faucibus felis. Etiam scelerisque nulla sit amet felis iaculis malesuada.</p>
-				</div><!--item-2-mosaico-->
-			</div><!--flex-moisaico-->
-<!--------------------------------------------------->
-			<div class="flex-mosaico">
-				<div style="background-image: url('imagens/mosaico4.jpg'); order: 2" class="item-1-mosaico"><!--importando a imagem junto comm o html -->
-				</div><!--item-1-mosaico-->
-				<div class="item-2-mosaico" style="order: 1">
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eros arcu, sollicitudin id mauris non, pharetra faucibus felis. Etiam scelerisque nulla sit amet felis iaculis malesuada.</p>
-				</div><!--item-2-mosaico-->
-			</div><!--flex-moisaico-->
-		</div><!--container-->
-	</section>
-	<footer>
-		<img src="imagens/logo1.png">
-		<p>Todos os direitos reservados</p>
-		<p>Contato:8022-4922</p>
-	</footer>
+    <section class="section-02"> 
+        <div class="container">
+            <div class="text">
+                <h2>There are many variations of passages of Lorem Ipsum available,there are many variations</h2>
+                <p>There are many variations</p>
+            </div><!--text-->
+        </div><!--container-->
+    </section><!--section-02-->
 
+    <section class="mosaico">
+        <div class="container">
 
+            <div class="flex-mosaico">
+                <div class="item-1" style="background-image: url('imagens/mosaico1.jpg');"></div><!--item-1-->
+
+                <div class="item-2">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Fusce eros arcu, sollicitudin id mauris non, pharetra
+                        faucibus felis. Etiam scelerisque nulla sit amet felis
+                        iaculis malesuada.
+                    </p>
+                </div><!--item-2-->
+
+            </div><!--flex-mosaico-->
+
+            <div class="flex-mosaico" style="flex-direction: row-reverse;">
+                <div class="item-1" style="background-image: url('imagens/mosaico2.jpg');"></div><!--item-1-->
+
+                <div class="item-2">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Fusce eros arcu, sollicitudin id mauris non, pharetra
+                        faucibus felis. Etiam scelerisque nulla sit amet felis
+                        iaculis malesuada.
+                    </p>
+                </div><!--item-2-->
+
+            </div><!--flex-mosaico-->
+
+            <div class="flex-mosaico">
+                <div class="item-1" style="background-image: url('imagens/mosaico3.jpg');"></div><!--item-1-->
+
+                <div class="item-2">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Fusce eros arcu, sollicitudin id mauris non, pharetra
+                        faucibus felis. Etiam scelerisque nulla sit amet felis
+                        iaculis malesuada.
+                    </p>
+                </div><!--item-2-->
+
+            </div><!--flex-mosaico-->
+
+            <div class="flex-mosaico" style="flex-direction: row-reverse;">
+                <div class="item-1" style="background-image: url('imagens/mosaico4.jpg');"></div><!--item-1-->
+
+                <div class="item-2">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Fusce eros arcu, sollicitudin id mauris non, pharetra
+                        faucibus felis. Etiam scelerisque nulla sit amet felis
+                        iaculis malesuada.
+                    </p>
+                </div><!--item-2-->
+
+            </div><!--flex-mosaico-->
+        </div><!--container-->
+    </section><!--mosaico-->
+
+    <footer>
+       <div class="container">
+           <p>Todos os direitos reservados</p>
+            <p>Contato: 06100000000</p>
+        </div><!--container-->
+    </footer>
+    
 </body>
 </html>

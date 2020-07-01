@@ -1,269 +1,202 @@
 *{
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nanum Gothic', sans-serif;
 }
 
 html,body{
-	height: 100%;
+
+    height: 100%;
 }
-/*DIVS GERAIS */
 
 .clear{
-	clear: both;
+
+    clear: both;
 }
 
+.hide{
 
-/**HEADER 	**/
-
-header{
-
-	background-color: rgb(180,180,180);
-	padding: 10px 2% 40px 2%; /*distanciamento */
+    display: none;
 }
 
 .container{
 
-	width: 100%;
-	max-width: 1200px;
-	margin: 0 auto;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    
 }
 
-.logo_1{
-	float: left;  /*se posicionando na esquerda*/
-	width: 150px; /*limite da largura em px*/
-	height: 50px; /*limite da altura em px */
-	background-image: url('../imagens/logo1.png');
-	background-size: 100% auto; /*Background 100% dentro do limite em px*/
-	background-position: center;/*Alinha verticalmente*/
-	background-repeat: no-repeat; /*Background não se repete*/
-	/*background-color: green;*/
+header{
+    background-color: #B4B4B4;
+    padding: 10px 2%; /*Espaçamento substituindo o height para melhorar o
+    responsivo*/
 }
 
-.logo_2{
-	float: right; /*se posicionando na direita*/
-	width: 160px; /*limite da largura em px*/
-	height: 50px; /*limite da altura em px */
-	background-image: url('../imagens/logo2.png');
-	background-size: 100% auto; /*Background 100% dentro do limite em px*/
-	background-position: center;/*Alinha verticalmente*/
-	background-repeat: no-repeat; /*Background não se repete */
-	/*background-color: green;*/
+.logo-01{
+    float: left; /*Zerar no float*/
+    width: 130px;
+    height: 100px;
+    /* background-color: purple; */
+    background-image: url('../imagens/logo1.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
-/*SECTION BG*/
-
-section.cover-form{
-	width: 100%;/*Vai ocupar todo o espaço */
+.logo-02{
+    float: right; /*Zerar no float*/
+    width: 130px;
+    height: 100px;
+    /* background-color: green; */
+    background-image: url('../imagens/logo2.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
-.bg{/*IMAGEM BACKGROUND */
-	/*SUBSTITUINDO O FLOAT (Vê o filho(form-container)*/
-	position: relative;/*div pai */
-	/******************************/
-	height: 560px;/*Tamanho verdical */
-	background-position: center; /*Se localizar no centro */
-	background-image: url('../imagens/bg-form.jpg');/*Imagem*/
-	background-size: cover; /*Cubri toda a área */
+.banner{
+    background-image: url('../imagens/bg-form.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    width: 100%;
+    max-width: 1200px;   
+    margin: 0 auto;
+    padding: 0 2%;
 }
 
-/*FORMULÁRIO*/
-.form-container{ 
-	/*SUBSTITUINDO O FLOAT (Vê o pai(gb)*/
-	position: absolute;/*div filho */
-	right: 30px; /*movimentando container */
-	top: -2.5%;/*Relativo a metade do > 100 
-	 no caso, 105% - 100% = 5/2 = 2.5 */
-	/******************************/
-	width: 400px;/*Altura*/
-	height: 105%;/*Altura dentro da div-pai(container-bg)*/
-	background-color: white;/*cor background */
-	box-shadow: 1px 1px 2px 1px rgb(180,180,180);
+/*Formulário*/
+
+.section-01 form{
+
+    width: 370px;
+    height: 550px;
+    background-color: #FFFFFF;
+    float: right;
+    margin: 0 auto;
+    position: relative;
+    top: 20px;
 }
 
-.form-container h2{ /*H2 dentro do form */
-	font-weight: normal;/*Sem detalhes*/
-	background-color: rgb(210,210,210);/*Cor do quadrado ao redor do h2 */
-	padding: 25px 15px; /*Distânciamento interno em px */
-	color: black; /*Cor da fonte */
-	font-size: 18px;/*Tamanho da fonte do h2 */
+form h2{
+    font-weight: normal;
+    padding: 30px 15px;
+    color: black;
+    font-size: 22px;
+    background-color: #D2D2D2;
+    text-align: center;
 }
 
-.form-container form{ /*Manipulando a tag form */
-	margin-top: 20px;/*Separando ele do container e do h2 */
-	padding: 20px; /*espaçamento interno */
+.form-wraper{
+    padding: 0 5%;
+    margin-top: 30px;
 }
 
-.form-container form p {
-	font-size: 14px;/*Tamanho da fonte P*/
-	color: #525252; /*Cor */
-}
-
-.form-wraper:not(:first-child){/*todas as classes menos a primeira */
-
-	margin-top: 40px;/*Aplique um padding 40px */
-}
-
-.form-wraper:last-child{
-	margin-top: 20px; /*Apenas no último node */
-}
-
-.form-container form input[type=text]{ /*Manipulando a entrada text dentro do form */
-	width: 100%; /*Largura 100%*/
-	border: 1px solid #ccc;/*borda*/
-	height: 45px;/*Altura*/
-	line-height: 45px;/*????????????????????????????????????????*/
-	padding-left: 10px; /*espaçamento da esquerda */
-}
-
-.form-container input[type=submit]{ /*Manipulando entrada submit */
-	background-color: #033c50; /*Cor do backgtound */
-	text-transform: uppercase; /*TUDO MAIUSCULO */
-	color: white;/*Cor das letras*/ 
-	width: 100%; /*Tamanho largura */
-	height: 50px; /*Altura do input*/
-	font-size: 25px; /*tamanho da fonte */
-	cursor: pointer; /*Curso do mouse */
-	border: 0; /*tirar a borda padrao do submit */
-}
-/***************/
-/*SECTION CHAMADA */
-
-section.chamada{
-	width: 100%; /*ESPAÇAMENTO TOTAL */
-	text-align: center; /*CENTRALIZA TUDO */
-	z-index: 1;/*PRIMEIRO PLANO */
-}
-
-section.chamada div.container{
-
-	background-color: #29526d;
-	padding:70px 0 50px 0;
-}
-
-section.chamada h2{
-	width: 96%; /*largura máxima dentro do tamanho */
-	max-width: 700px;/*Tamanho máximo */
-	display: inline-block; 
-	color: white; /*CORES */
-	font-size: 24px; /*TAMANHO DA FONTE */
-	font-weight: normal; /*SEM DETALHES */
+form .form-wraper p{
+    font-size: 16px;
+    color: #525252;
 
 }
 
-section.chamada p{
-	width: 98%; /*largura máxima dentro do tamanho */
-	max-width: 700px;/*Tamanho máximo */
-	display: inline-block; 
-	color: white; /*CORES */
-	margin-top: 10px;	
-	font-size: 18px; /*TAMANHO DA FONTE */
-	font-weight: normal; /*SEM DETALHES */
+.form-wraper input[type = "text"]{
 
+    width: 100%;
+    border: 1px solid #ccc;
+    height: 50px;
+    outline: 0;
+    padding-left: 10px;
 }
-/***************/
-/**MOISAICO***/
+
+input[type = "submit"]{
+
+    width: 100%;
+    background-color:#033C50;
+    border: 0;
+    cursor: pointer;
+    font-size: 25px;
+    color:white;
+    margin-bottom: 20px;
+    height: 50px;
+    outline: 0;
+}
+
+/*----------------------*/
+
+.section-02 .container{
+
+    background-color: #29526D;
+    width: 100%;
+    height: 180px;
+    text-align: center;
+}
+
+
+.section-02 .container .text{
+    color: white;
+    margin:0 auto;
+    max-width: 700px;
+    font-weight: normal;
+    padding: 40px 2% 0 2%;
+}
+
+.section-02 .container .text p{
+    font-size: 18px;
+    margin-top: 20px;
+    
+}
+
+/*Mosaico */
+
+/*PARA GIRAR, VEJA NO HTML - FLEX MOSAICO ou Colocar dentro dos filhos
+(item-1 e item-2) ordem:2 e ordem:1*/
 .flex-mosaico{
-	display: flex; /*Definindo um container flex
-	Um contêiner com "flex-wrap: nowrap;
-	" nunca embrulhará seus itens.*/
+    display: flex; /*Altera a propriedade display */
+    background-color:#D2D2D2;
+    font-weight: 400;
 }
 
-.item-1-mosaico{
-	background-position: center;/*Se posicionará no centro do seu limite*/
-	background-size: cover; /*Força a cobrir tudo */
-	width: 60%; /*Largura dentro do pai(flex-mosaico)*/
+.item-1{
+    width: 60%; /* Limite e porcentagem */
+    background-position: center;  /*Coloca para alinhar ao centro */
+    background-size: cover; /*Para cobrir todo o espaço disponivel */
+    background-repeat: no-repeat;  
+} 
+
+.item-2{
+    width: 40%; /* Limite e porcentagem */
+    padding: 60px; /* Padding para criar as bordas bonitas */
+    text-align: justify;/* Alinhar o texto */
 }
 
-.item-2-mosaico{
-	width: 40%;/*Largura dentro do pai(flex-mosaico)*/
-	padding: 50px 40px; /*Espaçamento interno */
-	background-color: #4683AB;
-	color: white; /*Cor de texto */
-	font-size: 20px; /*Tamanho da fonte */
-	text-align: justify; /*Texto justificável */
-}
+/*footer*/
 
-/*FOOTER */
 footer{
-	text-align: center; /*Alinhando o texto */
-	max-width: 1200px; /*Largura máxima */
-	width: 100%; /*100% da largura máxima*/
-	margin: 0 auto; /*Alinhar no centro */
-	background-color: rgb(210, 210, 210); /*Cor do footer*/
-	height: 80px; /*Altura*/
-
-}
-footer p{
-	margin: 8px;
-	width: 50%;
-	float: left; 
-
+    text-align: center;
+    padding: 20px 0;
 }
 
-footer img{
-	max-width: 150px;
-	width: 50%;
-	float: right;
-	position: relative;
-	top: 20px;
-	margin-right: 10%;
+/*Responsivo*/
+
+@media screen and (max-width:670px ){
+
+    .section-01 form{
+
+        float: none;
+    }
+    .flex-mosaico{
+        display: block;
+        
+    }
+    
+    .item-1{
+        padding-top: 40%;
+        width: 100%;
+    } 
+    
+    .item-2{
+        width: 100%;
+    }
 }
-/***************/
-/***************/
-/*RESPONSIVO*/
-@media screen and (max-width: 510px){ /*quando a tela chegar em (x)*/
-
-	/*HEADER RESPONSIVO */
-	header{
-		text-align: center; /*o header vai se alinhar */
-	}
-	.logo_1,.logo_2{
-		margin-top:10px; /*margem em cima */
-		float: none;/*Sem lado específico */
-		display: inline-block; /*"CADA UM NO SEU CANTO"*/
-		/*Quebra de linha no html*/
-	}/*****/
-}
-/*RESPONSIVO */
-@media screen and (max-width: 960px){
-	/*Background-formulário e section1  responsivo */
-	.bg{
-		height: auto;
-		padding: 40px 0;
-		text-align: center;/*Deixando o bg no centro*/
-	}
-
-	.form-container{
-		text-align: left;
-		height: auto;
-		width: 96%; /*porcentagem do limite*/
-		max-width: 400px;/*Limitando a largura*/
-		position: static;/*saindo do absolute para o static */
-		display: inline-block; /*centralizando com o filho */
-	}
-	/*********************************************************/
-}
-
-/*RESPONSIVO*/
-@media screen and (max-width: 768px){
-	/*MOSAICO */
-
-	.flex-mosaico{
-		display: block;/*QUEBRAR O DISPLAY:FLEX, CONSEQUENTEMENTE QUEBRA A ORDEM */
-	}
-	.item-1-mosaico{
-		
-		padding-top: 60%;/*Definindo uma altura (responsiva) para o display:block*/;
-		width: 100%;/*DEPOIS QUE QUEBRAR, COLOCAR 100% PARA IREM CADA UM PARA BAIXO */
-	}
-	.item-2-mosaico{
-		
-		width: 100%;/*DEPOIS QUE QUEBRAR, COLOCAR 100% PARA IRhttps://cursos.dankicode.com/campus/curso-front-end-completo/projeto-2-analise-e-revisaoEM CADA UM PARA BAIXO */
-	}
-	/*************/
-
-}
-
-
