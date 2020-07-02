@@ -48,16 +48,44 @@ header nav ul li{
     cursor: pointer;
 }
 
+/*SECTION-BG*/
+
 .bg{
-    background-image: url("../images/bg.png");
+    background-image: url("../images/bg.jpeg");
+
     height: 500px;
-    width: 100%
+    width: 100%;
     background-position: center;
+    background-size: cover;
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    
 }
 
+.bg .container{
+    text-align: center;
+    padding: 0 2%;
+    
+}
 
+.bg .text{
+    position: relative;
+    top: 120px;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 900px;
+    height: 200px;
+    background-color: rgba(110, 110, 110,0.2);
+}
+
+.bg .text h2{
+    font-size: 60px;
+}
+
+.bg .text p{
+    margin-top:60px;
+    font-size: 30px;
+
+}
 
 
 
