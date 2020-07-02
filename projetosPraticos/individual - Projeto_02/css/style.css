@@ -1,0 +1,79 @@
+*{
+	margin: 0;
+	padding: 0;
+    box-sizing: border-box;
+    
+}
+
+html,body{
+
+	height: 100%;
+}
+.container{
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1200px;
+}
+
+.clear{
+	clear: both;
+}
+
+.hide{
+    display: none;
+}
+
+header{
+    width: 100%;
+    padding: 20px 2%;
+}
+
+header .logo{
+    float: left;
+    width: 140px;
+    height: 70px;
+    background-color: blue;
+
+}
+
+header nav{
+    float: right;
+}
+
+header nav ul li{
+    margin-left: 40px;
+    float: left;
+    margin-top: 25px;
+    list-style-type: none;
+    cursor: pointer;
+}
+
+.bg{
+    background-image: url("../images/bg.png");
+    height: 500px;
+    width: 100%
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+
+
+
+
+
+@media screen and (max-width: 1024px){
+
+}
+
+@media screen and (max-width: 768px){
+
+}
+
+@media screen and (max-width: 580px){
+
+}
+
+@media screen and (max-width: 480px){
+
+}
