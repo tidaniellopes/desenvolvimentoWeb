@@ -113,7 +113,7 @@ header nav ul li{
 .section-01 input[type="submit"]{
     color: white;
     margin-top: 36px;
-    margin-left: 10px;
+    padding-left: 10px;
     width: 150px;
     height: 50px;
     float: right;
@@ -132,7 +132,7 @@ header nav ul li{
 
 .section-02{
     width: 100%;
-
+    padding: 0 2%;
 }
 
 .wraper-mosaico{
@@ -141,7 +141,6 @@ header nav ul li{
 
 .section-02 .wraper-mosaico .img{
     width: 60%;
-    height: 200px;
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -189,6 +188,16 @@ header nav ul li{
 }
 
 @media screen and (max-width: 768px){
+
+    .section-02 .wraper-mosaico .img{
+        width: 100%;
+        height: 180px;
+    }
+    
+    .section-02 .wraper-mosaico .text{
+        
+        width: 100%;
+    }
 
 }
 
