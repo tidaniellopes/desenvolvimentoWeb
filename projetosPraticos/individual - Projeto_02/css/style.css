@@ -2,13 +2,14 @@
 	margin: 0;
 	padding: 0;
     box-sizing: border-box;
-    
+    font-family: 'Montserrat', sans-serif;
 }
 
 html,body{
 
 	height: 100%;
 }
+
 .container{
 	margin: 0 auto;
 	width: 100%;
@@ -82,14 +83,14 @@ header nav ul li{
 
 .bg .text h2{
     font-size: 70px;
+    font-weight: 700;
 }
 
 .bg .text p{
     margin-top:40px;
     font-size: 30px;
-
+    font-weight: 300;
 }
-
 
 .section-01{
     width: 100%;
@@ -107,7 +108,7 @@ header nav ul li{
 }
 
 .section-01 p{
-    font-size: 25px;
+    font-size: 18px;
     padding-top: 46px;
     float: left;
     text-align: center;
@@ -185,6 +186,63 @@ header nav ul li{
     float: right;
 }
 
+/*Section-03*/
+
+.section-03{
+    width: 100%;
+    padding: 20px 2%; 
+
+}
+
+.section-03 .container{
+    text-align: center; /*Centralizando as colunas */
+    max-width: 1250px;
+}
+
+.section-03 .wraper-columns {
+    width: 33.3%;
+    max-width: 350px;
+    height: auto;
+    min-height: 300px;
+    padding: 40px;
+    margin: 0 auto;
+    float: left;
+    border: 2px solid blue;
+
+}
+
+.section-03 .wraper-columns .img{
+    margin: 40px auto 10px auto; /*centralizando as imagens*/
+    width: 120px;
+    height: 120px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+}
+
+.section-03 .wraper-columns .img1{
+    background-image: url('../images/wood01.png');
+
+}
+.section-03 .wraper-columns .img2{
+    background-image: url('../images/wood02.png');
+
+}
+
+.section-03 .wraper-columns .img3{
+    background-image: url('../images/wood03.png');
+}
+
+.section-03 .wraper-columns h2{
+    margin: 20px 0;
+}
+
+.section-03 .wraper-columns p{
+    text-align: justify;
+    font-weight: 300;
+}
+
 
 
 @media screen and (max-width: 1024px){
@@ -192,17 +250,20 @@ header nav ul li{
 }
 
 @media screen and (max-width: 768px){
-
-    .section-02 .wraper-mosaico .img{
-        width: 100%;
-        height: 180px;
-    }
+    .section-03 .wraper-columns {
+        width: 50%;
+        float: left;
+        text-align: center;
     
-    .section-02 .wraper-mosaico .text{
-        
-        width: 100%;
     }
 
+    .section-03 .wraper-columns:nth-of-type(3) {
+        width: 100%;
+        float: none;
+    
+    }
+
+    
 }
 
 @media screen and (max-width: 580px){
