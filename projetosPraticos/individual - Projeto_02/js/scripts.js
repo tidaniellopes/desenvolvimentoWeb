@@ -4,5 +4,7 @@ $(function(){
 		$('.section-02').css('display','inline-block')
 	})
 
+   
 
 })
+
