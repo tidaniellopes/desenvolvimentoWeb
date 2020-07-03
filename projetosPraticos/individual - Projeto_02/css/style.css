@@ -30,6 +30,7 @@ header{
     font-weight: 700;
     color:black;
     width: 100%;
+   
     padding: 20px 2%;
 }
 
@@ -41,7 +42,8 @@ header .logo{
 
 }
 
-header nav{
+/*Menu-desktop*/
+header .menu-desktop{
     float: right;
     
 }
@@ -58,12 +60,20 @@ header .menu-desktop ul li:hover{
     text-decoration: underline;
 }
 
+/*Menu-mobile*/
+
+.menu-mobile{
+    display: none;
+
+}
+
 /*SECTION-BG*/
 
 .bg{
     background-image: url("../images/bg.jpeg");
 
-    height: 520px;
+    min-height: 520px;
+    height: auto;
     width: 100%;
     background-position: center;
     background-size: cover;
@@ -321,6 +331,32 @@ footer p{
 
 @media screen and (max-width: 650px){
 
+    header .logo{
+        text-align: center;
+    }
+
+    header .logo{
+        float: none;
+        margin: 0 auto;
+    }
+
+    .menu-desktop{
+        display: none;
+        margin: 0 auto;
+
+    }
+
+    .menu-mobile{
+        display: block; /*Centralizar */
+        text-align: center;
+        padding-top: 30px;
+    }
+
+    .menu-mobile ul li{
+        padding: 10px;
+        border: 2px solid blue;
+    }
+
     .section-01{
         width: 100%;
         display: block;
@@ -374,18 +410,16 @@ footer p{
         float: none;
     
     }
-
     
 }
 
-@media screen and (max-width: 1024px){
 
-}
-
-@media screen and (max-width: 580px){
-
-}
-
-@media screen and (max-width: 480px){
-
+@media screen and (max-width: 420px){
+    .bg{
+        
+        min-height: 620px;
+        height: auto;
+        width: 100%;
+        
+    }
 }
