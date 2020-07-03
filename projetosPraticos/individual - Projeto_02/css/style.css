@@ -43,6 +43,7 @@ header .logo{
 
 header nav{
     float: right;
+    display: none;
 }
 
 header nav ul li{
@@ -315,6 +316,7 @@ footer p{
     font-size: 10px;
     color: black;
 }
+
 
 
 @media screen and (max-width: 650px){
