@@ -5,6 +5,7 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+
 html,body{
 
 	height: 100%;
@@ -136,15 +137,40 @@ header nav ul li:hover{
     font-size: 18px;
     padding:10px;
     border-radius: 80px;
+    
 }
 
 .section-01 input[type="submit"]:hover{
     background-color:rgb(70, 36, 20);
-    outline: 0;
     border: 4px solid rgb(133, 104, 11);
+    cursor: pointer;
 }
 
+
 .section-02{
+   
+    width: 100%;
+    background-color: rgb(133, 104, 11);
+    color: white;
+}
+
+.section-02 .container{
+    padding: 30px 2%;
+    max-width: 1000px;
+    
+    
+}
+
+.section-02 h2{
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.section-02 p{
+    text-align: justify;
+}
+
+.section-03{
     width: 100%;
     padding: 0 2%;
 }
@@ -153,45 +179,45 @@ header nav ul li:hover{
     display: flex;
 }
 
-.section-02 .wraper-mosaico .img{
+.section-03 .wraper-mosaico .img{
     width: 60%;
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-.section-02 .wraper-mosaico .text{
+.section-03 .wraper-mosaico .text{
     
     width: 40%;
     text-align: justify;
     padding: 50px;
 }
 
-.section-02 .img1{
+.section-03 .img1{
 
     background-image: url('../images/mosaico-01.png');
 
 }
 
-.section-02 .img2{
+.section-03 .img2{
     float: left;
     background-image: url('../images/mosaico-02.png');
 }
 
-.section-02 .text{
+.section-03 .text{
     float: right;
 }
-.section-02 .img3{
+.section-03 .img3{
 
     background-image: url('../images/mosaico-03.png');
 }
 
-.section-02 .img4{
+.section-03 .img4{
     float: left;
     background-image: url('../images/mosaico-04.png');
 }
 
-.section-02.text{
+.section-03.text{
     float: right;
 }
 
@@ -219,7 +245,7 @@ header nav ul li:hover{
     font-weight: 700;
     text-align: center;
     font-size: 30px;
-    padding: 70px 0 30px 0;
+    padding-bottom: 40px;
 }
 
 .section-columns p{
@@ -274,6 +300,22 @@ header nav ul li:hover{
 	padding-bottom: 90px;
 }
 
+footer{
+    width: 100%;
+    padding:10px 0 20px 0;
+}
+
+footer .container{
+    text-align: center;
+}
+
+footer p{
+    text-align: center;
+    font-size: 10px;
+    color: black;
+}
+
+
 @media screen and (max-width: 650px){
 
     .section-01{
@@ -315,14 +357,14 @@ header nav ul li:hover{
         display: block;
     }
 
-    .section-02 .wraper-mosaico .img{
+    .section-03 .wraper-mosaico .img{
         max-width: none;
         width: 100%;
         height: 300px;
         float: none;
     }
     
-    .section-02 .wraper-mosaico .text{
+    .section-03 .wraper-mosaico .text{
         max-width: none;
         width: 100%;
         padding:70px;
