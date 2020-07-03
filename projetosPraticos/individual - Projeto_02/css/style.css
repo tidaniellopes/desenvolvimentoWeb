@@ -137,18 +137,19 @@ header nav ul li:hover{
     font-size: 18px;
     padding:10px;
     border-radius: 80px;
+    cursor: pointer;
     
 }
 
 .section-01 input[type="submit"]:hover{
     background-color:rgb(70, 36, 20);
     border: 4px solid rgb(133, 104, 11);
-    cursor: pointer;
+    
 }
 
 
 .section-02{
-   
+   display: none;
     width: 100%;
     background-color: rgb(133, 104, 11);
     color: white;
