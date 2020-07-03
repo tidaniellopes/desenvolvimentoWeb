@@ -25,8 +25,9 @@ html,body{
 }
 
 header{
-    background-color: rgb(70, 36, 20);
-    color:white;
+    /* background-color: rgb(133, 104, 11); */
+    font-weight: 700;
+    color:black;
     width: 100%;
     padding: 20px 2%;
 }
@@ -103,7 +104,7 @@ header nav ul li{
 .section-01 .container{
     max-width: 1100px;
     color: white;
-    padding: 0 2%;
+    padding: 0 1%;
     
 }
 
@@ -112,20 +113,24 @@ header nav ul li{
     padding-top: 46px;
     float: left;
     text-align: center;
-    margin-right: 30px;
+    margin-right: 5px;
+    font-weight: 700;
+    width: 80%;
 }
 
 .section-01 input[type="submit"]{
     float: right;
     color: white;
     margin-top: 36px;
-    width: 150px;
+    width: 20;
+    max-width: 150px;
     height: 50px;
     float: right;
     background-color:rgb(133, 104, 11);
     outline: 0;
     border: 4px solid rgb(70, 36, 20);
-    font-size: 20px;
+    font-size: 18px;
+    padding:10px;
     border-radius: 80px;
 }
 
@@ -186,61 +191,144 @@ header nav ul li{
     float: right;
 }
 
-/*Section-03*/
+/*Sessão */
+.section-columns{
+	width: 100%; 
+	height: auto;
+	padding-bottom: 50px;
+    color: rgb(133, 104, 11);
+    background-color: rgba(255, 255, 255, 0.411);
+}
 
-.section-03{
-    width: 100%;
-    padding: 20px 2%; 
+
+
+/*Alterar o container para ficar maior */
+.section-columns .container{
+
+/*O SEGREDO É ESSE */
+    text-align: center;  /*Colocar no pai para alinhar TODOS*/
+	max-width: 1250px;
 
 }
 
-.section-03 .container{
-    text-align: center; /*Centralizando as colunas */
-    max-width: 1250px;
+/*ARRUMA O TÍTULO */
+.section-columns .title{
+    color: rgb(133, 104, 11);
+    font-weight: 700;
+    text-align: center;
+    font-size: 30px;
+    padding: 70px 0 30px 0;
 }
 
-.section-03 .wraper-columns {
-    width: 33.3%;
-    max-width: 350px;
-    height: auto;
-    min-height: 300px;
-    padding: 40px;
-    margin: 0 auto;
-    float: left;
-    border: 2px solid blue;
+.section-columns p{
+    font-weight: 400;
 
 }
 
-.section-03 .wraper-columns .img{
-    margin: 40px auto 10px auto; /*centralizando as imagens*/
-    width: 120px;
-    height: 120px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-
+/*Coluna*/
+.wraper{
+	width: 33.333%; /*Cada coluna */
+	max-width: 350px; /*Cada um se limita a */
+	height: 200px; /*Altura fixa */
+	margin:  30px; /*Margin entre eles */
+	display: inline-block; /*Alinha os display EM LINHA */
 }
 
-.section-03 .wraper-columns .img1{
+/*Arruma o icone*/
+.wraper .icon{
+	margin: 0 auto;
+	width: 80px;
+	height: 80px;
+	background-size: 100%;
+	background-repeat: no-repeat;   
+	background-position:center;
+}
+
+/*Adicionar o icones*/
+
+.wraper .icon1{
     background-image: url('../images/wood01.png');
-
 }
-.section-03 .wraper-columns .img2{
+
+.wraper .icon2{
     background-image: url('../images/wood02.png');
-
 }
 
-.section-03 .wraper-columns .img3{
+.wraper .icon3{
     background-image: url('../images/wood03.png');
 }
 
-.section-03 .wraper-columns h2{
-    margin: 20px 0;
+/*Título */
+
+.wraper h2{
+	padding: 20px 0;
+
 }
 
-.section-03 .wraper-columns p{
-    text-align: justify;
-    font-weight: 300;
+/*Parágrafo */
+
+.wraper p{
+	text-align: justify;
+	padding-bottom: 90px;
+}
+
+@media screen and (max-width: 650px){
+
+    .section-01{
+        width: 100%;
+        display: block;
+        
+    }
+    
+    .section-01 .container{
+        max-width: 1100px;
+        color: white;
+        padding: 0 2%;
+        text-align: center;
+        
+    }
+    
+    .section-01 p{
+        float: none;
+        text-align: center;
+        margin: 0 auto;
+    }
+    
+    .section-01 input[type="submit"]{
+        float: none;
+        color: white;
+        margin: 20px auto;
+        text-align: center;
+        width: 20;
+        max-width: 150px;
+        height: 50px;
+    }
+    
+    .wraper{
+        width: 100%;
+
+    }
+
+    .wraper-mosaico{
+        display: block;
+    }
+
+    .section-02 .wraper-mosaico .img{
+        max-width: none;
+        width: 100%;
+        height: 300px;
+        float: none;
+    }
+    
+    .section-02 .wraper-mosaico .text{
+        max-width: none;
+        width: 100%;
+        padding:70px;
+        float: none;
+    
+    }
+
+    
 }
 
 
@@ -249,22 +337,7 @@ header nav ul li{
 
 }
 
-@media screen and (max-width: 768px){
-    .section-03 .wraper-columns {
-        width: 50%;
-        float: left;
-        text-align: center;
-    
-    }
 
-    .section-03 .wraper-columns:nth-of-type(3) {
-        width: 100%;
-        float: none;
-    
-    }
-
-    
-}
 
 @media screen and (max-width: 580px){
 
