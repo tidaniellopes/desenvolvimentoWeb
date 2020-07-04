@@ -7,7 +7,7 @@
 
 
 html,body{
-
+    
 	height: 100%;
 }
 
@@ -158,12 +158,12 @@ header .menu-desktop ul li:hover{
     
 }
 
-
 .section-02{
-   display: none;
+    display: none;
     width: 100%;
     background-color: rgb(133, 104, 11);
     color: white;
+    min-width: 410px;
 }
 
 .section-02 .container{
@@ -237,10 +237,12 @@ header .menu-desktop ul li:hover{
 .section-columns{
 	width: 100%; 
 	height: auto;
-	padding-bottom: 50px;
+	padding: 60px 0;
     color: rgb(133, 104, 11);
     background-color: rgba(255, 255, 255, 0.411);
+
 }
+
 
 /*Alterar o container para ficar maior */
 .section-columns .container{
@@ -257,7 +259,8 @@ header .menu-desktop ul li:hover{
     font-weight: 700;
     text-align: center;
     font-size: 30px;
-    padding-bottom: 40px;
+    padding: 20px 5% 40px 5%;
+
 }
 
 .section-columns p{
@@ -269,9 +272,22 @@ header .menu-desktop ul li:hover{
 .wraper{
 	width: 33.333%; /*Cada coluna */
 	max-width: 350px; /*Cada um se limita a */
-	height: 200px; /*Altura fixa */
+	height: 300px; /*Altura fixa */
 	margin:  30px; /*Margin entre eles */
 	display: inline-block; /*Alinha os display EM LINHA */
+}
+/*Título */
+
+.wraper h2{
+	padding: 20px 0;
+    width: 100%;
+}
+
+/*Parágrafo */
+
+.wraper p{
+	text-align: justify;
+	padding-bottom: 90px;
 }
 
 /*Arruma o icone*/
@@ -281,7 +297,8 @@ header .menu-desktop ul li:hover{
 	height: 80px;
 	background-size: 100%;
 	background-repeat: no-repeat;   
-	background-position:center;
+    background-position:center;
+    background-color: ;
 }
 
 /*Adicionar o icones*/
@@ -298,19 +315,7 @@ header .menu-desktop ul li:hover{
     background-image: url('../images/wood03.png');
 }
 
-/*Título */
-
-.wraper h2{
-	padding: 20px 0;
-
-}
-
-/*Parágrafo */
-
-.wraper p{
-	text-align: justify;
-	padding-bottom: 90px;
-}
+/*footer*/
 
 footer{
     width: 100%;
@@ -327,9 +332,11 @@ footer p{
     color: black;
 }
 
-
-
 @media screen and (max-width: 650px){
+    /*TESTE*/
+
+    /*FIM-TEXT*/
+    
 
     header .logo{
         text-align: center;
@@ -356,6 +363,11 @@ footer p{
         padding: 10px;
         border: 2px solid blue;
     }
+
+    .bg .text p{
+        font-size: 18px;
+    }
+
 
     .section-01{
         width: 100%;
@@ -389,8 +401,11 @@ footer p{
     
     .wraper{
         width: 100%;
+        max-width: 250px; 
+        height: 215px; 
+        }
 
-    }
+    
 
     .wraper-mosaico{
         display: block;
@@ -415,11 +430,7 @@ footer p{
 
 
 @media screen and (max-width: 420px){
-    .bg{
-        
-        min-height: 620px;
-        height: auto;
-        width: 100%;
+    *{       
         
     }
 }
