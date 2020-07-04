@@ -30,7 +30,7 @@ header{
     font-weight: 700;
     color:black;
     width: 100%;
-   
+    
     padding: 20px 2%;
 }
 
@@ -81,6 +81,18 @@ header .menu-desktop ul li:hover{
     
 }
 
+.bg #menu{
+    float: right;
+    width: 30px;
+    height: 30px;
+    background-image: url('../images/menu.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin: 20px;
+    cursor: pointer;
+}
+
 .bg .container{
     text-align: center;
     padding: 0 2%;
@@ -101,9 +113,11 @@ header .menu-desktop ul li:hover{
 .bg .text h2{
     font-size: 70px;
     font-weight: 700;
+    text-align: center;
 }
 
 .bg .text p{
+    text-align: justify;
     margin-top:40px;
     font-size: 30px;
     font-weight: 300;
@@ -161,13 +175,15 @@ header .menu-desktop ul li:hover{
 .section-02{
     display: none;
     width: 100%;
+    height: auto;
+    padding: 20px 0;
     background-color: rgb(133, 104, 11);
     color: white;
-    min-width: 410px;
+    
 }
 
 .section-02 .container{
-    padding: 30px 2%;
+    padding: 0 5%;
     max-width: 1000px;
     
     
@@ -354,18 +370,23 @@ footer p{
     }
 
     .menu-mobile{
-        display: block; /*Centralizar */
+         /*Centralizar */
         text-align: center;
         padding-top: 30px;
     }
 
     .menu-mobile ul li{
         padding: 10px;
-        border: 2px solid blue;
+        border: 1px solid black ;
     }
 
     .bg .text p{
         font-size: 18px;
+    }
+
+    .bg .text{
+        font-size: 18px;
+        text-align: center;
     }
 
 
@@ -423,6 +444,13 @@ footer p{
         width: 100%;
         padding:70px;
         float: none;
+    
+    }
+
+    .section-columns {
+        
+        padding-top: 0px;
+       
     
     }
     
