@@ -268,8 +268,8 @@ header .img{
 
 .section-04 input{
 
-    width: 360px;
-    height: 80px;
+    width: 400px;
+    height: 95px;
     position: relative;
     top:90px;
     border-radius: 60px;
@@ -282,10 +282,38 @@ header .img{
     cursor: pointer;
     font-weight: normal;
     font-family: "Montserrat",Sans-serif;
+    box-shadow: 0px 11px 24px -10px #00C6D2;
 }  
 
 .section-04 input:hover{
     background-color:rgb(24, 169, 177); 
+}
+
+footer{
+    
+    width: 100%;
+    padding: 20px 0;
+    margin: 0 auto;
+}
+
+footer .container{
+    text-align: center;
+}
+
+footer .img{
+ 
+    margin: 80px auto 0 auto;
+    background-image: url('../imagens/footer.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 260px;
+    height: 60px;
+}
+
+footer .text{
+    color:rgb(10, 54, 94);
+    font-size: 14px;
 }
 
 
