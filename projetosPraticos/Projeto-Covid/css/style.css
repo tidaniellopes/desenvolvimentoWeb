@@ -282,17 +282,17 @@ header .img{
     cursor: pointer;
     font-weight: normal;
     font-family: "Montserrat",Sans-serif;
-    box-shadow: 0px 11px 24px -10px #00C6D2;
+    box-shadow: 0px 15px 30px -30px #00C6D2;
 }  
 
 .section-04 input:hover{
-    background-color:rgb(24, 169, 177); 
+    background-color:rgb(27, 192, 201); 
 }
 
 footer{
     
     width: 100%;
-    padding: 20px 0;
+    padding: 5px 0;
     margin: 0 auto;
 }
 
@@ -312,6 +312,7 @@ footer .img{
 }
 
 footer .text{
+    padding-top: 20px;
     color:rgb(10, 54, 94);
     font-size: 14px;
 }
