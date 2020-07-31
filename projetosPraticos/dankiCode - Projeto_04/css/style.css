@@ -477,7 +477,6 @@ footer .footer-block{
 	font-size: 18px;
 }
 
-
 footer p{
 	color:white;
 	font-size: 14px;
@@ -623,6 +622,7 @@ footer p{
 }
 
 @media screen and (max-width: 580px){
+
 	.img-perfil{
 		width: 80%;
 		padding-top: 70%;
